@@ -42,7 +42,7 @@ body { font-family:sans-serif; max-width:450px; margin:auto; padding:15px; backg
 #splash h2 { font-size: 42px; color: var(--ouro); font-family: 'Pinyon Script', cursive; font-weight: normal; }
 
 h1 { text-align:center; margin-bottom:10px; }
-/* Logótipo agora totalmente transparente e livre de fundos ou sombras */
+/* Logótipo flutua de forma totalmente limpa e transparente */
 h1 .logo { 
   max-width: 160px; 
   width: 100%; 
@@ -148,7 +148,8 @@ input, select { width:100%; padding:12px; margin-top:8px; border-radius:8px; bor
 <script>
 window.onload = () => setTimeout(() => document.getElementById("splash").style.display = "none", 2000);
 
-const API = 'https://script.google.com/macros/s/AKfycbwaadAQH8bqSJlTZyPg0sIG5FKil3Q3TC5UsPIYO9a6oqji9ZIvh0YdxDFiJueCReX7Qg/exec'; 
+// O teu novo link da API do Sheets inserido com sucesso!
+const API = 'https://script.google.com/macros/s/AKfycbwU2Mf9l2rMp_HFX2BE94aa2BNHRcLfw1oa7G17lhguHt4jFoK_h-RKlMQE-6Jqjau1Mg/exec'; 
 let db = [], cart = JSON.parse(localStorage.getItem("cart")) || [], favs = JSON.parse(localStorage.getItem("favs")) || [];
 let categoriaAtual = "", paginaAtual = 1;
 const itensPorPagina = 10;
